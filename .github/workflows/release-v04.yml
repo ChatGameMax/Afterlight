@@ -1,0 +1,33 @@
+name: Install released AFTERLIGHT v0.4 runtime
+on:
+  push:
+    branches: ['release/v04-package']
+permissions:
+  contents: write
+concurrency:
+  group: release-v04-package
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.repository == 'ChatGameMax/Afterlight' && github.ref == 'refs/heads/release/v04-package'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Verify and install finalized runtime only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .release/install-v04.py
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: afterlight-v04-released-runtime
+          path: release-output/
+          if-no-files-found: error
+          retention-days: 14
