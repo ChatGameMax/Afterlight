@@ -1,11 +1,11 @@
 # AFTERLIGHT
 
-Playable apocalypse survival sandbox, version 0.3.
+Playable apocalypse survival sandbox, version 0.4.
 
-Use the Armory to equip a melee kit, pistol, shotgun or rifle. Buy ammunition or recover it while searching districts. Choose conserve, use-equipped, or quiet policy. Firearms reduce hostile encounter damage but use ammunition and add noise; empty weapons fall back to melee. These are fictional game rules, not real-world weapon guidance.
+At home, use Expedition planning to choose how many survivors travel and whether to bring the best available weapons/ammo and armor or leave gear at home. Preview the named party and residents before leaving. Away survivors cannot work or defend at home, and carried gear is reserved for its wearer.
 
-The illustrated close-up follows your current location. At home, each building upgrade and base expansion changes the scene. Full close-up opens a larger view. Diagonal journeys, five base stages and the Recruitment desk remain available.
+Buy coats, jackets and protective vests in Armory. All protection values are fictional game balance. Defense upgrades now progress from timber to layered fortress walls, towers and a gatehouse. In the zombie scenario, departure and return scenes show the actual party, gear and unspent recovered supplies. Animations can be skipped or disabled and honor reduced motion.
 
-Export saves before upgrading or changing devices. Valid v0.1/v0.2 saves migrate with existing progression preserved. Version 3 saves do not load in earlier game versions. Time advances through actions, not idle real time.
+Export your save before refreshing or changing devices. Valid v0.1/v0.2/v0.3 saves migrate with existing progress retained. v0.4 saves do not load in older versions. Browser saves are local to this site and device. Returning cargo is already included in shared stock; unloading never credits it twice.
 
-This repository contains released playable runtime and hosting files only. Versioned assets avoid mixing new scripts with old cached pages. Previous root and v02 assets are retained for cached pages. No accounts, remote AI service or telemetry.
+This repository contains released player runtime and hosting material. Older versioned assets remain for cached pages. No account, remote AI service or telemetry is required.
