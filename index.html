@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111814">
+  <meta name="description" content="Afterlight: a customizable, offline apocalypse survival sandbox. Create a world, gather a community, and build what comes after.">
+  <title>AFTERLIGHT — An apocalypse sandbox</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111814'/%3E%3Cpath d='M12 50L32 12l20 38H40l-8-17-8 17z' fill='%23dbac72'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="engine.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main-content">Skip to game</a>
+  <div id="app"></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <noscript><main class="no-script"><h1>AFTERLIGHT</h1><p>This offline game needs JavaScript enabled. No accounts, downloads of dependencies, or external services are required.</p></main></noscript>
+</body>
+</html>
