@@ -4,9 +4,11 @@ A customizable, turn-based apocalypse survival game by ChatGameMax. This reposit
 
 ## Play
 
-The hosting target is https://chatgamemax.github.io/Afterlight/ once GitHub Pages is enabled. For repository administrators: Settings → Pages → Deploy from a branch → main → /(root) → Save.
+[Play AFTERLIGHT in your browser](https://chatgamemax.github.io/Afterlight/)
 
-Alternatively, download `index.html` and open it in a modern browser. The game is self-contained: its interface, simulation and styling are included in that one file. No account, API key, external font or game service is required.
+GitHub Pages serves the `gh-pages` branch from its root directory. Keep that publishing source for updates to the hosted game. That branch contains the HTML entry point, JavaScript, styling and minimal hosting files.
+
+The `main` branch also carries a self-contained downloadable release: download its `index.html` and open it in a modern browser. All game code and styling are included in that one file. No account, API key, external font or game service is required.
 
 Choose an apocalypse scenario, starting conditions, difficulty and world seed, then manage survivors, supplies and your camp while exploring the surrounding world. This is an early playable prototype, not a finished commercial release.
 
